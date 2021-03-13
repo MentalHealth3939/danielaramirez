@@ -1,0 +1,680 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url(top-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.top-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.top-header-item{
+    flex-grow: 1;
+    width: 0px;
+}
+
+.top-header-item .header-nav{
+    margin: 0px;
+}
+
+.top-header-item.logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-header-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.top-header-nav-list li{
+    padding: 0px 1em;
+    list-style: none;
+    color:  #282727;
+    font-family: 'PT Sans Caption', Impact;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.logo-top{
+    font-family: 'Prata', Impact;
+    color: white;
+    font-size: 4.4em;
+    letter-spacing: 0.2em;
+}
+
+.logo-bottom, .text-subtitle{
+    font-family: 'Prata', Impact;
+    color:  #3E3B3B;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
+.top-section-content{
+    height: 0px;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+    align-items: flex-start;
+}
+
+.content-card{
+    height: auto;
+    width: 22em;
+    background-color: rgba(255, 255, 255, 0.637);
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    padding: 1em;
+    color: rgb(29, 29, 29);
+}
+
+.contact-icons{
+    height: 10em;
+    width: 100%;
+}
+
+.contact-icons-container{
+    background-color: rgba(255, 255, 255, 0.349);
+    padding: 0.5em;
+    border-radius: 3rem;
+}
+
+.contact-icons-container img{
+    padding: 0px 1em;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+}
+
+/*ABOUT US*/
+
+.about-us{
+    height: 45rem;
+    width: 100%;
+    display: flex;
+}
+
+.about-us .item{
+    width: 0px;
+}
+
+.item.photo-group{
+    flex-grow: 1;
+    position: relative;
+    margin: 2em 0px;
+}
+
+.item.about-us-content{
+    flex-grow: 2;
+}
+
+.text-title{
+    font-size: 4.4em;
+    font-family: 'Prata', Impact;
+    letter-spacing: 0.3em;
+}
+
+.about-us-content .text-title{
+    color: #3E3B3B;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 0px;
+}
+
+.about-us-content .content{
+    height: auto;
+    width: 30em;
+    padding: 1em;
+    padding-top: 3em;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    color: #3E3B3B;
+    text-align: center;
+}
+
+.bottom-text{
+    font-family: 'PT Sans Caption';
+    letter-spacing: 0.2em;
+    color: #3E3B3B;
+}
+
+.photo-group .picture {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.left-big{
+    background-image: url(left-big.png);
+    height: 100%;
+    width: 45%;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-small{
+    background-image: url(left-small.png);
+    height: 100%;
+    width: 45%;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-top{
+    background-image: url(left-top.png);
+    height: 45%;
+    width: 100%;
+    right: 50%;
+    top: 0px;
+    transform: translateX(50%);
+}
+
+.left-bottom{
+    background-image: url(left-bottom.png);
+    height: 45%;
+    width: 100%;
+    right: 50%;
+    bottom: 0px;
+    transform: translateX(50%);
+}
+
+.right-big{
+    background-image: url(right-big.png);
+    height: 100%;
+    width: 45%;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-small{
+    background-image: url(right-small.png);
+    height: 100%;
+    width: 45%;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-top{
+    background-image: url(right-top.png);
+    height: 45%;
+    width: 100%;
+    right: 50%;
+    top: 0px;
+    transform: translateX(50%);
+}
+
+.right-bottom{
+    background-image: url(right-bottom.png);
+    height: 45%;
+    width: 100%;
+    right: 50%;
+    bottom: 0px;
+    transform: translateX(50%);
+}
+
+/*GALLERY*/
+
+.gallery{
+    background-color: #262A35;
+    color: white;
+}
+
+.gallery-content .text-title, .gallery-content .text-subtitle, .gallery-content .bottom-text, .contact-content .text-title, .contact-content .text-subtitle, .contact-content .bottom-text{
+    color: white;
+}
+
+.gallery-content .content{
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+}
+
+.gallery-container{
+    padding: 1em;
+    border: solid 0.2em white;
+    display: grid;
+    grid-template-columns: 45%;
+    grid-auto-rows: minmax(0.5em, auto);
+    grid-gap: 0.5em;
+    grid-template-areas: 
+    "pic1 pic2"
+    "pic1 pic3"
+    "pic4 pic4"
+    "pic6 pic5"
+    "pic7 pic5"
+    ;
+    width:50rem;
+    height:100em;
+}
+
+.gallery-container div{
+    background-color: yellow;
+    background-size: cover;
+}
+
+.pic1{
+    grid-area: pic1;
+    background-image: url(pic1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic2{
+    grid-area: pic2;
+    background-image: url(pic2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic3{
+    grid-area: pic3;
+    background-image: url(pic3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic4{
+    grid-area: pic4;
+    background-image: url(pic4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic5{
+    grid-area: pic5;
+    background-image: url(pic5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic6{
+    grid-area: pic6;
+    background-image: url(pic6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pic7{
+    grid-area: pic7;
+    background-image: url(pic7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-title, .text-subtitle, .content, .gallery-content .bottom-text{
+    padding: 1.5rem 0px;
+}
+
+.gallery{
+    padding-bottom: 5rem;
+}
+
+/*BLOG*/
+
+.blog-content .text-title, .blog-content .text-subtitle, .blog-content .bottom-text {
+    color: #3E3B3B;
+}
+
+.blog{
+    background-color: #F4FAFA;
+}
+
+.blog-content .content{
+    height: 58rem;
+    width: 72rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.blog-entry{
+    height: 17rem;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.blog-entry:nth-child(1){
+    background-image: url(blog1.png);
+}
+
+.blog-entry:nth-child(2){
+    background-image: url(blog2.png);
+}
+
+.blog-entry:nth-child(3){
+    background-image: url(blog3.png);
+}
+
+.blog-entry-content{
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.452);
+    left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0px;
+    
+}
+
+.blog-content .bottom-text{
+    padding-bottom: 5rem;
+}
+
+.blog-entry-title{
+    font-family: 'Prata';
+    color: #3E3B3B;
+    letter-spacing: 0.235em;
+    font-size: 1.5em;
+}
+
+.blog-entry-description{
+    font-family: 'PT Sans Caption';
+    color: #161616;
+    letter-spacing: 0.235em;
+    font-size: 1em;
+
+}
+
+.blog-entry-content .read-more{
+    font-family: 'PT Sans Caption';
+    font-weight: 700;
+    letter-spacing: 0.235em;
+    color: #545E79;
+    font-size: 1.2em;
+}
+
+.blog-content{
+    position: relative;
+    overflow: hidden;
+}
+
+.right-flower{
+    height: 30rem;
+    width: auto;
+    position: absolute;
+    top: 5rem;
+    right: 0px;
+    transform: translateX(50%);
+    content: url(right-flower.svg);
+}
+
+.left-flower{
+    height: 20rem;
+    width: auto;
+    position: absolute;
+    top: 20rem;
+    left: 0px;
+    transform: translateX(-50%);
+    content: url(left-flower.svg);
+}
+
+/*CONTACT*/
+
+.contact{
+    width: 100%;
+    height: 75rem;
+    background-color: #545E79;
+    background-image: url(contact-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.dark-layer{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.dark-layer1{
+    width: 90%;
+}
+
+.dark-layer2{
+    width: 85%;
+}
+
+.dark-layer3{
+    width: 80%;
+}
+
+
+
+.contact-content .content{
+    width: 65rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25%;
+    grid-auto-rows: minmax(2em, auto);
+    grid-gap: 2em;
+    grid-template-areas: 
+    "first-name-label first-name-input last-name-label last-name-input"
+    "email-label email-input email-input email-input"
+    "subject-label  subject-input subject-input subject-input"
+    "message-label message-label message-label message-label"
+    "message-input message-input message-input message-input"
+    "bottom-text bottom-text bottom-text bottom-text "
+    ;
+}
+
+.bottom-text{
+    grid-area: bottom-text;
+}
+
+.first-name-label{
+    grid-area: first-name-label;
+}
+
+.first-name-input{
+    grid-area: first-name-input;
+}
+
+.last-name-label{
+    grid-area: last-name-label;
+}
+
+.last-name-input{
+    grid-area: last-name-input;
+}
+
+.email-label{
+    grid-area: email-label;
+}
+
+.email-input{
+    grid-area: email-input;
+}
+
+.subject-label{
+    grid-area: subject-label;
+}
+
+.subject-input{
+    grid-area: subject-input;
+}
+
+.message-label{
+    grid-area: message-label;
+}
+
+.message-input{
+    grid-area: message-input;
+}
+
+.contact-content .content input, .contact-content .content textarea{
+    background-color: none;
+    outline: none;
+    border: none;
+    border-bottom: solid 0.2em white;
+    background: transparent;
+    color: #FBFFFF;
+    font-family: 'PT Sans Caption';
+    font-size: 1.2em;
+    letter-spacing: 0.235em;
+    font-weight: 400;
+}
+
+.contact-content .content textarea{
+    border: solid 0.2em white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.contact-content .content label{
+    color: #FBFFFF;
+    font-family: 'PT Sans Caption';
+    font-size: 1.2em;
+    letter-spacing: 0.235em;
+    font-weight: 400;
+}
+
+button.bottom-text{
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/*BOTTOM FOOTER*/
+
+.bottom-footer{
+    width: 100%;
+    height: 40rem;
+    background-color: #2EA1BA;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.botom-footer-item{
+    height: 100%;
+    width:100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.botom-footer-item .logo-container{
+    text-align: center;
+}
+
+.logo-container a{
+    text-decoration: none;
+}
+
+
+.footer-logo.logo-bottom{
+    font-size: 1.2em;
+    font-family: 'PT Sans Caption';
+    color: #282727;
+}
+
+.footer-logo.logo-bottom a{
+    color: #282727;
+    font-weight: 700;
+}
+
+.contact-us{
+    letter-spacing: 0.235em;
+    font-size: 1.2em;
+    font-family: 'PT Sans Caption';
+    color: #282727;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.footer-icons.contact-icons-container {
+    background-color: transparent;
+    margin: auto;
+    border-radius: 3rem;
+    width: 20rem;
+    padding-bottom: 1em;
+}
+
+.botom-footer-item.contact-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.contact-info-element{
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 1em;
+    color: white;
+    padding: 1em 0px;
+}
+
+.contact-info-element.active{
+    font-weight: 500;
+}
+
