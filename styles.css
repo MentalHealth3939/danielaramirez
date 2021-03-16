@@ -727,7 +727,7 @@ button.bottom-text{
 
 .bottom-footer{
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     background-color: #2EA1BA;
     display: flex;
     justify-content: center;
@@ -893,6 +893,17 @@ button.bottom-text{
 
 @media (max-width: 960px){
 
+    .contact-info-element{
+        text-align: center;
+    }
+
+    .bottom-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
     .gallery-container{
         width:90vw;
         height: 180vw;
@@ -943,11 +954,25 @@ button.bottom-text{
     .photo-group-2{
         grid-area:photo-group-2;
     }
+
 }
 
 
-@media (max-height: 750px){
+@media (max-width: 812px){
 
+    body, html{
+        --title-size: 2em;
+        --subtitle-size: 1em;
+        --option-text-size: 0.8em;
+    }
+
+    .blog-entry-title{
+        font-size: 1.2em;
+    }
+
+    .blog-entry-description{
+        font-size: 0.8em;
+    }
 
 }
 
@@ -971,14 +996,6 @@ button.bottom-text{
     .contact-icons{
         height: 10em;
         width: 100%;
-    }
-    
-    .blog-entry-title{
-        font-size: 1.2em;
-    }
-
-    .blog-entry-description{
-        font-size: 0.8em;
     }
 
 }
