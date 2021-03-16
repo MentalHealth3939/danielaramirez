@@ -909,9 +909,8 @@ button.bottom-text{
 
 @media (max-height: 750px){
 
-    .top-header-item{
-        flex-grow: 0;
-        width: 0px;
+    .top-section{
+        height: fit-content;
     }
 
     .content-card{
