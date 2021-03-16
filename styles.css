@@ -919,7 +919,7 @@ button.bottom-text{
     body, html{
         --title-size: 2em;
         --subtitle-size: 1em;
-        --option-text-size: 1em;
+        --option-text-size: 0.5em;
     }
     
     .blog-entry-title{
