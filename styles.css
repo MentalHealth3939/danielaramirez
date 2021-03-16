@@ -336,7 +336,7 @@ body, html{
 .gallery-content .content{
     display: flex;
     justify-self: center;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 5rem;
 }
 
@@ -858,6 +858,13 @@ button.bottom-text{
 }
 
 @media (max-width: 960px){
+
+
+    .gallery-container{
+        width:90vw;
+        height: 180vw;
+    }
+
 
         .item.photo-group, .item.about-us-content{
             flex-grow: 0;
