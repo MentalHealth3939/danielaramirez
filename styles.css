@@ -909,18 +909,29 @@ button.bottom-text{
 
 @media (max-height: 750px){
 
-    .top-section-content{
-        flex-grow: 0;
-    }
+
 }
 
 
 @media (max-width: 450px){
 
+    .contact-icons-container img{
+        height: 1.5em;
+    }
+
+    .contact-icons{
+        align-items: flex-start;
+    }
+
     body, html{
         --title-size: 2em;
         --subtitle-size: 1em;
         --option-text-size: 0.8em;
+    }
+
+    .contact-icons{
+        height: 10em;
+        width: 100%;
     }
     
     .blog-entry-title{
