@@ -804,11 +804,13 @@ button.bottom-text{
 /*RESPONSIVE*/
 
 @media (max-width: 1630px){
+
     body, html{
         --title-size: 3.4em;
         --subtitle-size: 1.1em;
         --option-text-size: 1em;
     }
+
 }
 
 @media (max-width: 1360px){
@@ -870,7 +872,7 @@ button.bottom-text{
         .text-subtitle{
             padding-top: 0px;
         }
-        
+
     .about-us{
         height: 100vh;
         width:100%;
@@ -905,7 +907,20 @@ button.bottom-text{
 }
 
 
+@media (max-height: 750px){
+    .content-card{
+        transform: scale(0);
+    }
+}
+
+
 @media (max-width: 450px){
+
+    body, html{
+        --title-size: 2em;
+        --subtitle-size: 1em;
+        --option-text-size: 1em;
+    }
     
     .blog-entry-title{
         font-size: 1.2em;
@@ -914,11 +929,7 @@ button.bottom-text{
     .blog-entry-description{
         font-size: 0.8em;
     }
+
 }
 
 
-@media (max-height: 750px){
-    .content-card{
-        transform: scale(0);
-    }
-}
