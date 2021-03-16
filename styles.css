@@ -618,8 +618,6 @@ body, html{
     width: 80%;
 }
 
-
-
 .contact-content .content{
     width: 65rem;
     height: 100%;
@@ -694,7 +692,15 @@ body, html{
     font-weight: 400;
 }
 
-.contact-content .content textarea{
+.message-input {
+    height: 5rem;
+    width: 95%;
+    margin: auto;
+}
+
+.contact-content .content .message-input textarea{
+    height: 100%;
+    width: 100%;
     border: solid 0.2em white;
     border-radius: 1em;
     padding: 1em;
@@ -841,6 +847,16 @@ button.bottom-text{
 }
 
 @media (max-width: 1160px){
+
+    .contact-content .content textarea{
+        height: 25vw;
+    }
+
+    .contact-content .content{
+        width: 90vw;
+        height: fit-content;
+    }
+
     .blog-content .content{
         width: 80vw;
     }
@@ -857,21 +873,36 @@ button.bottom-text{
 
 }
 
-@media (max-width: 960px){
+@media (max-width: 900px){
+    .contact-content .content{
+        display: flex;
+        display: grid;
+        grid-template-areas: 
+        "first-name-label first-name-input first-name-input  first-name-input "
+        "last-name-label last-name-input last-name-input last-name-input"
+        "email-label email-input email-input email-input"
+        "subject-label  subject-input subject-input subject-input"
+        "message-label message-label message-label message-label"
+        "message-input message-input message-input message-input"
+        "bottom-text bottom-text bottom-text bottom-text "
+        ;
+    }
+}
 
+
+@media (max-width: 960px){
 
     .gallery-container{
         width:90vw;
         height: 180vw;
     }
-
-
         .item.photo-group, .item.about-us-content{
             flex-grow: 0;
             margin:0px;
         }
 
         .about-us-content .content{
+            padding: 1em;
             width: 90%;
             padding: 0px;
         }
